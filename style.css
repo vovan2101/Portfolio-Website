@@ -7,15 +7,16 @@
     text-decoration: none;
 }
 
-
-/* navbar */
-
+html{
+    scroll-behavior: smooth;
+}
 .max-width{
     max-width: 1800px;
     padding: 0 80px;
     margin: auto;
 }
 
+/* navbar */
 
 .navbar {
     position: fixed;
@@ -83,9 +84,32 @@
     font-size: 23px;
     cursor: pointer;
     display: none;
-    
-    
 }
+
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: crimson;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
 
 
 /* Home */
@@ -181,7 +205,7 @@ section .title::after{
 
 /* about section */
 
-.about, .skills, .contact{
+.about, .skills, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 
@@ -475,7 +499,21 @@ section .title::after{
     background: none;
 }
 
+/* Footer */
+footer{
+    background: black;
+    padding: 20px 23px;
+    color: #fff;
+    text-align: center;
+}
 
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
 /* responsive media query start */
 @media (max-width: 1300px){
     .home .max-width{
