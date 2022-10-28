@@ -499,6 +499,14 @@ section .title::after{
     background: none;
 }
 
+#msg {
+    color: black;
+    margin-top: 15px ;
+    display: block;
+    color: #61b752;
+}
+
+
 /* Footer */
 footer{
     background: black;
@@ -647,9 +655,3 @@ footer span a:hover{
     }
 }
 
-#msg {
-    color: black;
-    margin-top: 15px ;
-    display: block;
-    color: #61b752;
-}
