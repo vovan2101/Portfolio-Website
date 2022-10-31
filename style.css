@@ -116,7 +116,8 @@ html{
 
 .home{
     display: flex;
-    background: black;  
+    background: url() no-repeat ;
+    background-color: black; 
     color: #fff;
     min-height: 500px;
     height: 100vh;
@@ -324,6 +325,7 @@ section .title::after{
 }
 .skills .skills-content .left p{
     text-align: justify;
+    font-family: 'Poppins', sans-serif;
 }
 
 .skills .skills-content .left a{
@@ -386,16 +388,19 @@ section .title::after{
     width: 50%;
 }
 .skills-content .right .js::before{
-    width: 30%;
+    width: 40%;
 }
 .skills-content .right .react::before{
-    width: 30%;
+    width: 40%;
+}
+.skills-content .right .vue::before{
+    width: 40%;
 }
 .skills-content .right .html::before{
-    width: 60%;
+    width: 70%;
 }
 .skills-content .right .css::before{
-    width: 60%;
+    width: 70%;
 }
 
 /* contact section */
@@ -533,7 +538,7 @@ footer span a:hover{
     margin-right:15px;
     color: white;
     display: inline-block;
-    transition:transform 0.5s;
+    transition: transform 0.5s;
 }
 
 .social-icons a:hover{
